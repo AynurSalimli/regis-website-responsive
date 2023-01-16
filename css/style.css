@@ -1,0 +1,232 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.header {
+  display: flex;
+  margin-top: 40px;
+}
+.header_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 30px;
+}
+.header__logo {
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
+  font-weight: 600;
+}
+.header__menu {
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
+}
+.header__menu ul {
+  display: flex;
+  gap: 40px;
+}
+.header__menu ul a {
+  color: rgb(0, 0, 0);
+}
+.header__menu ul a:hover {
+  border-bottom: 2px solid black;
+}
+
+.foods {
+  margin-top: 50px;
+}
+.foods_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .foods_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .foods_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.foods__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.foods__left .pineapple {
+  height: 816px;
+  width: 600px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__left .pineapple {
+    margin: auto;
+    height: 716px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__left .pineapple {
+    margin: auto;
+    width: 350px;
+  }
+}
+.foods__left .corn {
+  height: 624px;
+  width: 600px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__left .corn {
+    margin: auto;
+    height: 524px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__left .corn {
+    margin: auto;
+    width: 350px;
+  }
+}
+.foods__left .avocado {
+  height: 816px;
+  width: 600px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__left .avocado {
+    margin: auto;
+    height: 716px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__left .avocado {
+    margin: auto;
+    width: 350px;
+  }
+}
+.foods__left .papaya {
+  height: 624px;
+  width: 600px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__left .papaya {
+    margin: auto;
+    height: 524px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__left .papaya {
+    margin: auto;
+    width: 350px;
+  }
+}
+.foods__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.foods__right .lemon {
+  width: 600px;
+  height: 624px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__right .lemon {
+    margin: auto;
+    height: 524px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__right .lemon {
+    margin: auto;
+    width: 350px;
+  }
+}
+.foods__right .egg {
+  width: 600px;
+  height: 816px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__right .egg {
+    margin: auto;
+    height: 716px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__right .egg {
+    margin: auto;
+    width: 350px;
+  }
+}
+.foods__right .milk {
+  width: 600px;
+  height: 624px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__right .milk {
+    margin: auto;
+    height: 524px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__right .milk {
+    margin: auto;
+    width: 350px;
+  }
+}
+.foods__right .apple {
+  width: 600px;
+  height: 816px;
+}
+@media only screen and (max-width: 991px) {
+  .foods__right .apple {
+    margin: auto;
+    height: 716px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .foods__right .apple {
+    margin: auto;
+    width: 350px;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.footer_wrapper {
+  width: 400px;
+}
+@media only screen and (max-width: 767px) {
+  .footer_wrapper {
+    width: 200px;
+  }
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */

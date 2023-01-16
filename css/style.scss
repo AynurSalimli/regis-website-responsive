@@ -1,0 +1,187 @@
+@import 'reset';
+@import 'mixins';
+
+.container{
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+.header{
+    display: flex;
+    margin-top: 40px;
+    &_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    
+}
+&__logo{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+}
+&__menu{
+    justify-content: center;
+    @include tablet{
+        display: none;
+    }
+    @include mobile{
+        display: none;
+    }
+    
+    ul{
+        display: flex;
+        gap: 40px;
+        a{
+            color: rgb(0, 0, 0);
+            &:hover{
+                border-bottom: 2px solid black;
+            }
+    }
+}
+}
+}
+.foods{
+    margin-top: 50px;
+    &_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        @include mobile{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    .pineapple{
+        height: 816px;
+        width: 600px;
+        @include tablet{
+            margin: auto;
+            height: 716px;
+        }
+        @include mobile{
+            margin: auto;
+            width: 350px;
+        }
+    }
+    .corn{
+        height: 624px;
+        width: 600px;
+        @include tablet{
+            margin: auto;
+            height: 524px;
+        }
+        @include mobile{
+            margin: auto;
+            width: 350px;
+        }
+
+    }
+    .avocado{
+        height: 816px;
+        width: 600px;
+        @include tablet{
+            margin: auto;
+            height: 716px;
+        }
+        @include mobile{
+            margin: auto;
+            width: 350px;
+        }
+
+    }
+    .papaya{
+        height: 624px;
+        width: 600px;
+        @include tablet{
+            margin: auto;
+            height: 524px;
+        }
+        @include mobile{
+            margin: auto;
+            width: 350px;
+        }
+
+    }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .lemon{
+            width: 600px;
+            height: 624px;
+            @include tablet{
+                margin: auto;
+                height: 524px;
+            }
+            @include mobile{
+                margin: auto;
+                width: 350px;
+            }
+        }
+        .egg{
+            width: 600px;
+            height: 816px;
+            @include tablet{
+                margin: auto;
+                height: 716px;
+            }
+            @include mobile{
+                margin: auto;
+                width: 350px;
+            }
+        }
+        .milk{
+            width: 600px;
+            height: 624px;
+            @include tablet{
+                margin: auto;
+                height: 524px;
+            }
+            @include mobile{
+                margin: auto;
+                width: 350px;
+            }
+        }
+        .apple{
+            width: 600px;
+            height: 816px;
+            @include tablet{
+                margin: auto;
+                height: 716px;
+            }
+            @include mobile{
+                margin: auto;
+                width: 350px;
+            }
+        }
+    }
+}
+.footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content:center ;
+    &_wrapper{
+        width: 400px;
+        @include mobile{
+            width: 200px;
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        font-size: 30px;
+    }
+}
